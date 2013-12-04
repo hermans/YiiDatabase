@@ -6,7 +6,7 @@ I got some problem when work with Yii + PDO:
 
 Main Configuration (main.php)
 for MySQL:
-[code]
+
 'db'=>array(
 	'config'=>array(
 		'host'=>'localhost',
@@ -17,10 +17,9 @@ for MySQL:
 		),
 	'class'=>'application.components.db.dbMysql',
 ),
-[/code]
 
 for SQL Server:
-[code]
+
 'db'=>array(
 	'config'=>array(
 		'host'=> 'local\SQLEXPRESS',
@@ -31,10 +30,10 @@ for SQL Server:
 		),
 	'class'=>'application.components.db.dbMssql',
 ),
-[/code]
+
 
 How to use:
-[code]
+
 class MyDB
 {
 	function getCustomerById($id)
@@ -44,4 +43,4 @@ class MyDB
 		return $rs->row;
 	}
 }
-[/code]
+
